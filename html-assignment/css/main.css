@@ -1,7 +1,7 @@
 /* Changes font style and size */
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font: size 18px;
+    font-size: 18px;
 }
 
 /* Adds background color to header and footer */
