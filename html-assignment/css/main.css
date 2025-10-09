@@ -28,3 +28,10 @@ ul{
 main ul li:nth-child(odd){
     background-color: salmon;
 }
+
+/* Adds style to links on page */
+a:link{
+    text-decoration:none;
+    border-style: solid;
+    background-color: chartreuse;
+}
