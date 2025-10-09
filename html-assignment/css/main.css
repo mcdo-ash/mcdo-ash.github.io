@@ -35,3 +35,8 @@ a:link{
     border-style: solid;
     background-color: chartreuse;
 }
+
+/* Changes color on hover of link */
+a:hover{
+    background-color:aqua;
+}
