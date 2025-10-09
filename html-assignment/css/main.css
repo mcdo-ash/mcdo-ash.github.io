@@ -4,6 +4,12 @@ body{
     font: size 18px;
 }
 
+/* Adds background color to header and footer */
 header, footer{
     background-color:lavender;
+}
+
+/* Changes color of the main heading using a class selector */
+.site-title{
+    color:coral;
 }
