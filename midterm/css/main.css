@@ -1,5 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+header {
+    position:relative;
+    text-align:center;
+}
+
+h1{
+    position: absolute;
+    top:44%;
+    left:360px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:50px;
+    font-weight:200;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
 body {
     background-color:#aad4cf;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -8,12 +35,12 @@ body {
     margin: 0 auto;
 }
 
-nav ul{
+nav ul {
     text-align: center;
     padding-left: 0;
 }
 
-nav ul li{
+nav ul li {
     display:inline-block;
     text-transform: uppercase;
     width: 100px;
