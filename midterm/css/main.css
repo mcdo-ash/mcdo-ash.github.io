@@ -96,6 +96,10 @@ textarea {
     width: 100%;
 }
 
+textarea#ymsg {
+    height:80px;
+}
+
 button {
     color:#000000;
     background-color: #d4e9e7;
@@ -105,6 +109,7 @@ button {
 
 footer{
     text-align:right;
+    padding:25px;
 }
 
 
