@@ -72,3 +72,9 @@ footer{
     border-width: 1px;
     margin: 10px 10px 10px;
 }
+
+button {
+    color:#000000;
+    background-color: #d4e9e7;
+    padding:10px
+}
