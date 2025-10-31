@@ -1,10 +1,13 @@
+/* makes elements push inwards rather then outwards visually */
 *,*::before,*::after {
   box-sizing:border-box;
 }
+/* positions header elements relative to its container of div.wrapper */
 header {
   position:relative;
   text-align:center;
 }
+/* positioning the main title overtop the image with absolute property as well as typography adjustment */
 h1 {
   position:absolute;
   top:44%;
@@ -14,25 +17,30 @@ h1 {
   font-size:50px;
   font-weight:200;
 }
+/* removes underline from links and changes their color */
 a {
   text-decoration:none;
   color:black;
 }
+/* changes the background color of the page and makes all text within the body tag to have the same typeface */
 body {
   background-color:#aad4cf;
   font-family:Arial,Helvetica,sans-serif;
 }
+/* changes anything in the .wrapper tag to have a background color overtop the body color, this has a width smaller than the entire page so elements fit in the center. */
 .wrapper {
   background-color:#d4e9e7;
   width:1024px;
   margin:0 auto;
 }
+/* this makes nav text centered and the padding and margin at 0 makes it sit underneath the header image without a gap. */
 nav ul {
   text-align:center;
   padding-left:0;
   padding-top:0;
   margin-top:0;
 }
+/* changes list items in nav to be in a horizontal row in all uppercase, the width makes them sit further apart with the lines breaking up each link */
 nav ul li {
   display:inline-block;
   text-transform:uppercase;
@@ -40,61 +48,73 @@ nav ul li {
   border-right:1px solid black;
   font-size:x-large;
 }
+/* this selects the last link of the nav list so it doesn't have a line afterwords */
 nav ul li:last-child {
   border-right:none;
 }
+/* indents text and changes how it appears. */
 h2 {
   padding-left:5px;
   font-weight:500;
   font-family:Arial,Helvetica,sans-serif;
   font-size:28px;
 }
-h3 {
-  padding-left:5px;
+/* this also indents the text and changes its apperence but it also modifies the padding and margins so there is no gap between when the next element begins */
+h3 { 
+padding-left:5px;
   font-weight:500;
   font-family:Arial,Helvetica,sans-serif;
   font-size:28px;
   padding-bottom:0;
   margin-bottom:0;
 }
+/* indents article text */
 article {
   padding-left:5px;
 }
+/* using the image id to target and float the image so the text in the article wraps around it with modified margins to have a small invisible border */
 #image {
   height:200px;
   width:200px;
   float:left;
   margin:0px 15px 15px 5px;
 }
+/* second unordered list given a class of facts to directly target and change the styling of the list */
 ul.facts {
   display:inline-block;
   padding-left:10px;
   margin-left:10px;
 }
+/* div given a class of .forum to give a border and change the padding within to center the elements inwards  */
 .forum {
   border-style:solid;
   border-width:1px;
   margin:10px 10px 10px;
   padding:20px
 }
+/* divs that include labels for textareas were given a class of .userinput in order to target and change how the text appears above textareas */
 div.userinput label {
   display:block;
   padding-top:10px;
   padding-bottom:6px;
 }
+/* makes width of text area 100% relative to its containing border box */
 textarea {
   width:100%;
   resize:none;
 }
+/* targets last textarea directly with id of #ymsg to change height of the textarea */
 textarea#ymsg {
   height:80px;
 }
+/* changes appearence of the SEND button and adds padding to make it sit further from radio buttons */
 button {
   color:#000000;
   background-color:#d4e9e7;
   padding:10px;
   margin-top:12px;
 }
+/* puts footer on the right side of screen relative to its .wrapper bounding box and adds padding so it sits away from edge */
 footer {
   text-align:right;
   padding:25px;
