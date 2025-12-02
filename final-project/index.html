@@ -29,6 +29,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <!-- searchbox placed in div for easy targeting in css -->
             <div class="search">
             <textarea name="searchbox" id="sbox">Search</textarea>
             <span class="material-symbols-outlined">search</span>
@@ -36,6 +37,7 @@
         </div>
     </header>
     <main>
+        <!-- all five sections include classed divs with content, images and heading to target in css, all fake buttons also placed in divs  -->
         <section id="home">
             <div class="welcome">
                 <img src="./images/main-banner.jpg" alt="">
@@ -82,6 +84,7 @@
                 <div class="printbutton"><h4>Print Plans <span class="material-symbols-outlined">arrow_right</span></h4></div>
             </div>
         </section>
+        <!-- vision banner content in div to create banner in css -->
         <div class="vision">
             <img src="./images/vision.jpg" alt="">
             <h3>Our Vision</h3>
@@ -90,14 +93,14 @@
         </div>
         <h2>Our Team</h2>
         <section id="team">
-            <img src="./images/john.jpg" alt="John Doe">
+            <img src="./images/john.jpg" alt="">
             <div class="john">   
                 <h3>John Doe</h3>
                 <h5>CEO and Owner</h5>
                 <hr>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, aspernatur. Quas accusantium at ratione perspiciatis quisquam, ad repellat sunt ex? Non cupiditate placeat doloribus a numquam nulla eligendi voluptate obcaecati!</p>
             </div>
-            <img src="./images/bob.jpg" alt="Bob Rite">
+            <img src="./images/bob.jpg" alt="">
             <div class="bob">
                 <h3>Bob Rite</h3>
                 <h5>CFO and Co-owner</h5>
@@ -106,6 +109,7 @@
             </div>
         </section>
         <h2>Contact Us</h2>
+        <!-- each form element placed into their own divs to be able to individually target them in css -->
         <section id="contact">
            <div class="form">
              <h3>Send us a Message</h3>
@@ -134,12 +138,14 @@
              </form>
            </div>
            <div class="location">
+            <!-- location embedded -->
             <h3>Location</h3>
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9503616948905!2d-75.75790842373222!3d45.34981427107237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764203211846!5m2!1sen!2sca" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
            </div>
         </section>
     </main>
     <footer>
+        <!-- unsplash linked on text in footer -->
         <p>&copy; Copyright Three Star Media, 2020</p>
         <p>All images are taken from <a href="http://unsplash.com">Unsplash</a></p>
     </footer>
