@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mcdo-ash Final Project</title>
+    <!-- custom css -->
     <link rel="stylesheet" href="./css/main.css">
+    <!-- link to google fonts arrow right for buttons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right" />
+    <!-- link to google fonts search icon for search bar -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 </head>
-
 <body>
+    <!-- header given class to target its background color in css -->
     <header class="header">
+        <!-- logo put inside div so its bounding box can be manipulated in css -->
         <div class="logo">
             <img src="./images/logo.png" alt="">
         </div>
+        <!-- div with a class of wrapper to give it color -->
         <div class="wrapper">
             <nav>
                 <ul>
@@ -27,6 +32,7 @@
             </nav>
             <div class="search">
             <textarea name="searchbox" id="sbox">Search</textarea>
+            <span class="material-symbols-outlined">search</span>
             </div>
         </div>
     </header>
