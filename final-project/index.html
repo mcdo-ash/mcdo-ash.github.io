@@ -31,18 +31,20 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <!-- searchbox placed in div for easy targeting in css -->
-        <div class="search">
-          <textarea name="searchbox" id="sbox">Search</textarea>
-          <span class="material-symbols-outlined">search</span>
-        </div>
+        <!-- searchbox is an input form -->
+        <form action="index.html">
+          <label for="search"></label>
+          <input type="text" id="search" placeholder="Search">
+          <button class="material-symbols-outlined">search</button>
+        </form>
       </div>
     </header>
     <main>
-      <!-- all five sections include classed divs with content, images and heading to target in css, all fake buttons also placed in divs  -->
+      <!-- content and images in seperate divs for display grid properties to be applied  -->
       <section id="home">
+        <img src="./images/main-banner.jpg" alt="" />
         <div class="welcome">
-          <img src="./images/main-banner.jpg" alt="" />
+          <div class="welcomecontent">
           <h1>Welcome to Three Star Media</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
@@ -50,15 +52,14 @@
             officiis sequi sit! Aperiam quae assumenda minima consectetur,
             aliquid corrupti tenetur numquam quos.
           </p>
+          </div>
         </div>
-        <div class="conbutton">
-          <h4>
-            Connect with us
-            <span class="material-symbols-outlined">arrow_right</span>
-          </h4>
-        </div>
-        <div id="about">
+        <a href="#contact">Connect with us <span class="material-symbols-outlined">arrow_right</span>
+        </a>
+      </section>
+        <section id="about">
           <img src="./images/about-us.jpg" alt="" />
+          <div class="aboutcontent">
           <h2>About Us</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
@@ -66,12 +67,14 @@
             Error laudantium exercitationem eaque corrupti optio, a officia
             libero rerum, odit nesciunt ipsa!
           </p>
-        </div>
-      </section>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fuga dolore in, alias sint quisquam. Labore dolor impedit, omnis laudantium quam veniam? Ipsum illo, perferendis sit sunt beatae quaerat neque?</p>
+          </div>
+        </section>
       <h2>Our Services</h2>
       <section id="services">
+        <div class="card1">
         <img src="./images/digital.jpg" alt="" />
-        <div class="digital">
+        <div class="cardcontent">
           <h3>Digital Transformation</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A, placeat
@@ -79,31 +82,24 @@
             asperiores alias, veniam quaerat minus similique officia ratione
             soluta, cupiditate est odit!
           </p>
-          <div class="digbutton">
-            <h4>
-              Digital Plans
-              <span class="material-symbols-outlined">arrow_right</span>
-            </h4>
-          </div>
+          <a href="">Digital Plans <span class="material-symbols-outlined">arrow_right</span></a>
         </div>
+        </div>
+        <div class="card2">
         <img src="./images/marketing.jpg" alt="" />
-        <div class="marketing">
+        <div class="cardcontent">
           <h3>Marketing</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea
             praesentium deleniti, ipsa saepe cupiditate repellat harum at. Nam
             nostrum dicta neque incidunt ipsa at id aut ex eum obcaecati.
           </p>
-          <div class="markbutton">
-            <h4>
-              Marketing Plans<span class="material-symbols-outlined"
-                >arrow_right</span
-              >
-            </h4>
-          </div>
+          <a href="#">Marketing Plans <span class="material-symbols-outlined">arrow_right</span></a>
         </div>
+        </div>
+        <div class="card3">
         <img src="./images/video.jpg" alt="" />
-        <div class="video">
+        <div class="cardcontent">
           <h3>Video Production</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
@@ -111,30 +107,24 @@
             autem, facilis est suscipit adipisci unde quasi saepe laudantium
             quas dolore ab numquam.
           </p>
-          <div class="vidbutton">
-            <h4>
-              Video Plans
-              <span class="material-symbols-outlined">arrow_right</span>
-            </h4>
-          </div>
+          <a href="#">Video Plans <span class="material-symbols-outlined">arrow_right</span></a>
         </div>
+        </div>
+        <div class="card4">
         <img src="./images/web.jpg" alt="" />
-        <div class="web">
+        <div class="cardcontent">
           <h3>Web Development</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ad
             unde dolor, corporis quidem natus iure laboriosam ab rem temporibus
             fuga nobis neque esse vitae placeat accusantium earum hic laborum?
           </p>
-          <div class="webbutton">
-            <h4>
-              Web Plans
-              <span class="material-symbols-outlined">arrow_right</span>
-            </h4>
-          </div>
+          <a href="#">Web Plans <span class="material-symbols-outlined">arrow_right</span></a>
         </div>
+        </div>
+        <div class="card5">
         <img src="./images/print.jpg" alt="" />
-        <div class="print">
+        <div class="cardcontent">
           <h3>Print</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo,
@@ -142,37 +132,28 @@
             esse quidem accusamus dignissimos rerum veniam, consequatur ratione
             eos totam officiis. Nihil.
           </p>
-          <div class="printbutton">
-            <h4>
-              Print Plans
-              <span class="material-symbols-outlined">arrow_right</span>
-            </h4>
-          </div>
+          <a href="#">Print Plans <span class="material-symbols-outlined">arrow_right</span></a>
+        </div>
         </div>
       </section>
       <!-- vision banner content in div to create banner in css -->
       <div class="vision">
         <img src="./images/vision.jpg" alt="" />
-        <h3>Our Vision</h3>
+        <h2>Our Vision</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
           velit dicta omnis architecto ipsa facilis in, a doloremque nisi
           asperiores officiis debitis minima, odio rem mollitia unde dolor
           repudiandae consequatur.
         </p>
-        <div class="learnbutton">
-          <h4>
-            Learn More
-            <span class="material-symbols-outlined">arrow_right</span>
-          </h4>
-        </div>
+        <a href="#">Learn More <span class="material-symbols-outlined">arrow_right</span></a>
       </div>
       <h2>Our Team</h2>
       <section id="team">
         <img src="./images/john.jpg" alt="" />
         <div class="john">
           <h3>John Doe</h3>
-          <h5>CEO and Owner</h5>
+          <h4>CEO and Owner</h4>
           <hr />
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos,
@@ -184,7 +165,7 @@
         <img src="./images/bob.jpg" alt="" />
         <div class="bob">
           <h3>Bob Rite</h3>
-          <h5>CFO and Co-owner</h5>
+          <h4>CFO and Co-owner</h4>
           <hr />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -201,12 +182,12 @@
           <h3>Send us a Message</h3>
           <form action="index.html" method="get" id="contactform">
             <div class="userinput">
-              <label for="fname"> Full Name </label>
-              <textarea name="fullname" id="fname"></textarea>
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fname">
             </div>
             <div class="userinput">
               <label for="email"> Email </label>
-              <textarea name="email" id="email"></textarea>
+              <input type="text" name="email" id="email">
             </div>
             <div class="userinput">
               <label for="msg"> Message </label>
@@ -217,8 +198,8 @@
             </div>
           </form>
         </div>
-        <h3>Hours of operation</h3>
         <div class="hours">
+          <h3>Hours of operation</h3>
           <table>
             <thead>
               <tr>
