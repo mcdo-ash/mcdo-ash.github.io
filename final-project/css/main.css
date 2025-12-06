@@ -74,12 +74,14 @@ h1{
 h2{
 	font-size: 2.5rem;
 	font-weight: 700;
-	margin-top:10px
+	margin: 10px 0px;
+	padding: 10px 0px
 }
 
 h3{
 	font-size:1.5rem;
 	font-weight:700;
+	padding: 0px 0px 10px;
 }
 
 h4{
@@ -90,6 +92,7 @@ h4{
 
 p{
 	font-size:0.75rem;
+	padding: 0px 0px 5px;
 }
 .wrapper{
     background-color: #222;
@@ -186,6 +189,10 @@ button.material-symbols-outlined{
 	padding:15px;
 }
 
+.aboutcontent hr{
+	visibility: hidden;
+}
+
 #services{
 	display:grid;
 	margin:15px;
@@ -223,7 +230,6 @@ button.material-symbols-outlined{
 	background-size:cover;
 	background-position: center;
 	padding:15px;
-	margin:15px;
 	color:white;
 	display:flex;
 	flex-direction: column;
@@ -255,9 +261,8 @@ button.material-symbols-outlined{
 }
 
 #contact h2{
-	margin-left:20px;
-	margin-top:10px;
 	font-size:2rem;
+	margin-left:20px
 }
 
 .form{
@@ -316,7 +321,7 @@ th, td{
 footer{
 	background-color:#222;
 	color:#c78c06;
-	padding: 20px 5px 5px;
+	padding: 20px 5px 10px;
 }
 
 footer a{
