@@ -246,7 +246,42 @@ button.material-symbols-outlined{
 
 #contact{
 	display:grid;
-	margin:15px;
 }
+
+#contact h2{
+	margin-left:20px;
+	margin-top:10px;
+	font-size:2rem;
+}
+
+.form{
+	padding:20px;
+	font-size:0.75rem;
+}
+
+#contactform input{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+
+#fname, #email, #msg {
+	width:100%;
+}
+
+#msg{
+	height:100px;
+	resize:none;
+	margin-top:5px
+}
+
+#contactform button{
+	margin-top:12px;
+	background-color: #222;
+	color:#c78c06;
+	padding:4px;
+	border:none;
+}
+
 
 
