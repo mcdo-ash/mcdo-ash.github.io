@@ -64,6 +64,15 @@ h1{
 	font-weight: 700;
 }
 
+h2{
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+
+p{
+	font-size:0.75rem;
+}
 .wrapper{
     background-color: #222;
     display:grid;
@@ -142,3 +151,16 @@ button.material-symbols-outlined{
 	padding: 30px;
 	grid-row: 6/7;
 }
+
+
+#aboutus{
+	width:100%
+}
+
+.aboutus{
+	background-color:#ffe6ac;
+	padding:15px;
+}
+
+
+
