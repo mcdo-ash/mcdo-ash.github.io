@@ -69,6 +69,11 @@ h2{
 	font-weight: 700;
 }
 
+h3{
+	font-size:1.5rem;
+	font-weight:700;
+}
+
 
 p{
 	font-size:0.75rem;
@@ -162,5 +167,26 @@ button.material-symbols-outlined{
 	padding:15px;
 }
 
+#services{
+	display:grid;
+	margin:15px;
+}
+
+.card{
+	background-color: #ffe6ac;
+	margin:5px;
+}
+
+.cardimage{
+	width:100%
+}
+
+.cardcontent{
+	padding:10px;
+}
+
+.card2{
+	background-color: #ffe6ac;
+}
 
 
