@@ -81,6 +81,11 @@ h3{
 	font-weight:700;
 }
 
+h4{
+	font-size:0.75rem;
+	font-weight: 700;
+}
+
 
 p{
 	font-size:0.75rem;
@@ -142,9 +147,12 @@ button.material-symbols-outlined{
 
 
 .welcomecontainer{
-	background-color:#222;
-	padding:15px;
-	grid-row:3/10;
+	background-color: rgba(2, 2 ,2, 0.6);
+	padding: 20px 10px 10px ;
+	grid-row:2/11;
+	display:flex;
+	flex-direction: column;
+	gap:2px;
 }
 
 .welcomecontent{
@@ -156,6 +164,10 @@ button.material-symbols-outlined{
 .welcomecontainer a{
 	text-decoration: none;
 	background-color:#c78c06;
+	color:#222;
+	align-self: flex-start;
+	padding:20px;
+	margin-top:5px;
 }
 
 
@@ -236,4 +248,5 @@ button.material-symbols-outlined{
 	display:grid;
 	margin:15px;
 }
+
 
