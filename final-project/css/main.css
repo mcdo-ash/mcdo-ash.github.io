@@ -93,34 +93,28 @@ p{
 }
 .wrapper{
     background-color: #222;
-    display:grid;
+    display:flex;
     border: solid 10px #222;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	justify-content: left;
+	flex-direction: column;
 }
 
 .logo{
     background-color:#c78c06;
 	height:150px;
 	padding-top:10px;
-	grid-column: 1/4;
-	grid-row: 1/2;
 }
 
 nav{
-	grid-row:1/3;
-	grid-column: 2/3;
-	margin-top:90px
+	margin-top:-75px;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
-nav ul{
-    display:grid;
-    margin:15px;
-}
 
 nav ul li{
-	padding: 20px;
+	padding: 22px;
+	text-align: center;
 }
 
 li a{
@@ -128,6 +122,17 @@ li a{
 	text-decoration: none;
 }
 
+#difcolor{
+	color:#222;
+}
+
+nav form{
+	display:flex;
+}
+
+#search{
+	flex-grow: 1;
+}
 
 button.material-symbols-outlined{
 	border-color:#c78c06;
