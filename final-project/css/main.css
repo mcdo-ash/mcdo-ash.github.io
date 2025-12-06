@@ -57,6 +57,13 @@ body {
   line-height: 1.4;
 }
 
+
+main a{
+	text-decoration: none;
+	
+}
+
+
 /* mobile font sizing */
 
 h1{
@@ -183,10 +190,57 @@ button.material-symbols-outlined{
 
 .cardcontent{
 	padding:10px;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 5px;
+	column-gap: 0;
 }
 
-.card2{
-	background-color: #ffe6ac;
+.cardcontent h3{
+	grid-row:1/2;
+	grid-column: 1/4;
 }
+
+.cardcontent p{
+	grid-row:2/4;
+	grid-column: 1/4;
+}
+
+.cardbutton{
+	background-color:#222;
+	color:white;
+	padding:20px;
+	grid-row:4/5;
+	grid-column:1/2;
+	text-align: center;
+}
+
+.vision{
+	background-image:url(../images/vision.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	padding:15px;
+	margin:10px;
+	color:white;
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 5px;
+}
+
+.vision .cardbutton{
+	opacity: 80%;
+}
+
+.vision h2{
+	grid-column: 1/4;
+}
+
+.vision p{
+	grid-column: 1/4;
+}
+
+
 
 
