@@ -304,3 +304,20 @@ th, td{
 	font-size:0.75rem;
 }
 
+.location{
+	margin:20px
+}
+
+footer{
+	background-color:#222;
+	color:#c78c06;
+	padding: 20px 5px 5px;
+}
+
+footer a{
+	color:#c78c06
+}
+
+footer p{
+	padding:10px
+}
