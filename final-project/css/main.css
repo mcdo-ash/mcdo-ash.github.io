@@ -67,8 +67,9 @@ main a{
 /* mobile font sizing */
 
 h1{
-	font-size:3rem ;
+	font-size:2rem ;
 	font-weight: 700;
+	padding: 0px 0px 10px
 }
 
 h2{
@@ -91,7 +92,7 @@ h4{
 
 
 p{
-	font-size:0.75rem;
+	font-size:0.5rem;
 	padding: 0px 0px 5px;
 }
 .wrapper{
@@ -108,7 +109,7 @@ p{
 }
 
 nav{
-	margin-top:-75px;
+	margin-top:-70px;
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -131,6 +132,7 @@ li a{
 
 nav form{
 	display:flex;
+
 }
 
 #search{
@@ -177,6 +179,13 @@ button.material-symbols-outlined{
 	align-self: flex-start;
 	padding:20px;
 	margin-top:5px;
+	display:flex;
+	align-items:center;
+	justify-items: center;
+}
+
+a .material-symbols-outlined{
+	font-size:2rem;
 }
 
 
@@ -222,6 +231,9 @@ button.material-symbols-outlined{
 	text-align: center;
 	align-self: flex-start;
 	margin-top: 5px;
+	display:flex;
+	align-items: center;
+	justify-items: center;
 }
 
 .vision{
@@ -266,8 +278,9 @@ button.material-symbols-outlined{
 }
 
 .form{
-	margin: 0px 20px 0px;
+	margin: 0px 15px 0px;
 	font-size:0.75rem;
+	padding:10px;
 }
 
 #contactform input{
@@ -328,5 +341,6 @@ footer a{
 }
 
 footer p{
-	padding:10px
+	padding:10px;
+	font-size:0.75rem;
 }
