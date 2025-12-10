@@ -383,18 +383,30 @@ footer p{
 	}
 
 	nav{
-		margin: 0px 50px 0px;
+		margin: 0px 70px 0px;
 		flex-direction: row;
 	}
 
 	nav ul{
 		display:flex;
+		align-items: center;
+	}
+
+	nav ul li{
+		padding: 30px;
+		margin:0;
+	}
+
+
+	#difcolor{
+		background-color: #c78c06;
+		padding: 20px 40px;
+		margin-left:0;
 	}
 
 	.logo{
 		padding:0;
 		height:auto;
-		align-self: flex-start;
 	}
 
 	#search{
