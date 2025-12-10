@@ -105,6 +105,7 @@ nav,
 section {
   display: block;
 }
+/* container given max width of 1200px as per the assignment guidelines */
 body {
   line-height: 1;
   max-width: 1200px;
