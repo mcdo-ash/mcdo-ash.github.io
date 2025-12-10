@@ -107,12 +107,15 @@ p{
 	flex-direction: column;
 }
 
+/* logo given background color and size for the overlapping anchor link */
+
 .logo{
     background-color:#c78c06;
 	height:150px;
 	padding-top:10px;
 }
 
+/* mobile nav given negative margin to overlap the home anchor link */
 nav{
 	margin-top:-70px;
 	display:flex;
@@ -120,16 +123,19 @@ nav{
 	justify-content: flex-start;
 }
 
-
 nav ul li{
 	padding: 22px;
 	text-align: center;
 }
 
+/* coloring links in nav and removing thier underline */
+
 li a{
 	color:#c78c06;
 	text-decoration: none;
 }
+
+/* changing color of the link that has its own color */
 
 #difcolor{
 	color:#222;
@@ -140,9 +146,13 @@ nav form{
 
 }
 
+/* flex grow applied so the search bar is larger than the search button */
+
 #search{
 	flex-grow: 1;
 }
+
+/* style for all buttons in cards */
 
 button.material-symbols-outlined{
 	border-color:#c78c06;
@@ -151,6 +161,7 @@ button.material-symbols-outlined{
 	height: 38px;
 }
 
+/* displayed as grid to center home content */
 
 #home{
 	background-image: url(../images/main-banner.jpg);
@@ -161,6 +172,7 @@ button.material-symbols-outlined{
 	grid-template-rows: repeat(11, 1fr);
 }
 
+/* content in box displayed as flex to control where it sits inside container */
 
 .welcomecontainer{
 	background-color: rgba(2, 2 ,2, 0.6);
@@ -173,9 +185,9 @@ button.material-symbols-outlined{
 
 .welcomecontent{
 	color:white;
-	opacity: 100%;
 }
 
+/* specific styling for the button in welcome content */
 
 .welcomecontainer a{
 	text-decoration: none;
@@ -189,10 +201,13 @@ button.material-symbols-outlined{
 	justify-items: center;
 }
 
+/* specific font size for buttons */
+
 a .material-symbols-outlined{
 	font-size:2rem;
 }
 
+/* image given width 100% to fit content with padding */
 
 #aboutus{
 	width:100%
@@ -203,9 +218,13 @@ a .material-symbols-outlined{
 	padding:15px;
 }
 
+/* hiding hr in about us content that was added to seperate paragraphs */
+
 .aboutcontent hr{
 	visibility: hidden;
 }
+
+/* service cards displayed as cards for styling different media screens */
 
 #services{
 	display:grid;
@@ -216,14 +235,20 @@ a .material-symbols-outlined{
 	margin-left:15px
 }
 
+/* styling of all cards on page */
+
 .card{
 	background-color: #ffe6ac;
 	margin:5px;
 }
 
+/* making all card images fit content */
+
 .cardimage{
 	width:100%
 }
+
+/* styling content inside cards */
 
 .cardcontent{
 	padding:10px;
@@ -232,6 +257,8 @@ a .material-symbols-outlined{
 	gap: 2px;
 }
 
+
+/* card button specific style */
 
 .cardbutton{
 	background-color:#222;
@@ -245,6 +272,8 @@ a .material-symbols-outlined{
 	justify-items: center;
 }
 
+/* vision banner made to span across the width of the page */
+
 .vision{
 	background-image:url(../images/vision.jpg);
 	background-repeat: no-repeat;
@@ -257,6 +286,8 @@ a .material-symbols-outlined{
 	gap: 10px;
 }
 
+/* specific styling for vision button */
+
 .vision .cardbutton{
 	background-color: rgba(2, 2 ,2, 0.6);
 	border:solid 1px #c78c06;
@@ -265,6 +296,8 @@ a .material-symbols-outlined{
 .vision h2{
 	font-size:1.5rem;
 }
+
+/* team displayed as grid for different media screen styling */
 
 #team{
 	display:grid;
@@ -277,6 +310,8 @@ a .material-symbols-outlined{
 	color:#c78c06;
 }
 
+/* contact displayed as grid for different media screen order of items */
+
 #contact{
 	display:grid;
 }
@@ -285,6 +320,8 @@ a .material-symbols-outlined{
 	font-size:2rem;
 	margin-left:20px
 }
+
+/* contact form styling */
 
 .form{
 	margin: 0px 15px 0px;
@@ -302,11 +339,15 @@ a .material-symbols-outlined{
 	width:100%;
 }
 
+/* resize none makes text box not able to be resized */
+
 #msg{
 	height:100px;
 	resize:none;
 	margin-top:5px
 }
+
+/* specific button styling for contact form */
 
 #contactform button{
 	margin: 15px 0px 10px;
@@ -320,12 +361,15 @@ a .material-symbols-outlined{
 	width:100%
 }
 
+/* hours table made as a flexbox for control over the content */
 
 .hours{
 	display:flex;
 	flex-direction: column;
 	margin: 0 20px 5px;
 }
+
+/* table styling */
 
 table, th, td{
 	border: solid 1.5px #222;
@@ -344,6 +388,8 @@ th, td{
 	margin:20px
 }
 
+/* footer styling */
+
 footer{
 	background-color:#222;
 	color:#c78c06;
@@ -359,7 +405,12 @@ footer p{
 	font-size:0.75rem;
 }
 
+/* desktop styles in media query starting at screens with a minimum width of 760px */
+
 @media screen and (min-width:760px) {
+
+	/* font sizes for desktop */
+	
 	h1{
 		font-size:4.5rem;
 	}
@@ -380,6 +431,8 @@ footer p{
 	p{
 		font-size:0.75rem
 	}
+
+	/* changes nav flex direction with adjustment of how items sit on nav bar */
 
 	.wrapper{
 		flex-direction: row;
@@ -403,6 +456,7 @@ footer p{
 		margin:0;
 	}
 
+	/* home link adjusted for desktop nav styling */
 
 	#difcolor{
 		background-color: #c78c06;
@@ -410,10 +464,14 @@ footer p{
 		margin-left:0;
 	}
 
+	/* logo adjusted to fit inside navbar */
+
 	.logo{
 		padding:0;
 		height:auto;
 	}
+
+	/* searchbar desktop styling */
 
 	#search{
 		padding:10px;
@@ -424,6 +482,7 @@ footer p{
 		align-self: center;
 	}
 
+	/* welcome container and about us section adjusted to desktop alignment */
 
 	.welcomecontainer{
 		margin:100px;
@@ -436,6 +495,8 @@ footer p{
 		padding: 10px 100px;
 		gap: 10px;
 	}
+
+	/* services cards changed to line up in desktop order */
 
 	#services{
 		grid-template-columns: repeat(6, 1fr);
@@ -472,10 +533,14 @@ footer p{
 		grid-column: 5/7;
 	}  
 
+	/* card button changed for desktop to span across the bottom of the card */
+
 	.cardbutton{
 		align-self: normal;
 		justify-content: center;
 	}
+
+	/* vision content and button re-aligned */
 
 	.vision{
 		padding:15px 90px;
@@ -484,6 +549,8 @@ footer p{
 	.vision .cardbutton{
 		align-self: flex-start;
 	}
+
+	/* team cards given display of grid to manipulate where the content and images sit to meet the checkerboard pattern of desktop style */
 
 	#team .card{
 		display:grid;
@@ -534,6 +601,8 @@ footer p{
 		margin:0px 90px 30px;
 	}
 
+	/* contact form adjusted to have desktop alignment of items */
+
 	#contact{
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
@@ -560,6 +629,8 @@ footer p{
 		margin:0px
 	}
 
+	/* adjustment of footer content for desktop */
+	
 	footer p{
 		margin-left:70px
 	}
