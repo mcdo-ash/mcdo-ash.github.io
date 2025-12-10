@@ -95,7 +95,7 @@ h4{
 
 
 p{
-	font-size:0.5rem;
+	font-size:0.75rem;
 	padding: 0px 0px 5px;
 }
 
@@ -257,7 +257,7 @@ a .material-symbols-outlined{
 }
 
 .vision .cardbutton{
-	background-color: rgba(2, 2 ,2, 0.7);
+	background-color: rgba(2, 2 ,2, 0.6);
 	border:solid 1px #c78c06;
 }
 
@@ -406,7 +406,11 @@ footer p{
 	#services{
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: 1fr 0.5fr;
-		margin:90px;
+		margin:0px 90px 10px;
+	}
+
+	#serHeading{
+		margin: 0px 90px 0px;
 	}
 
 	#card1{
@@ -434,13 +438,95 @@ footer p{
 		grid-column: 5/7;
 	}  
 
-	.cardcontent{
-		justify-items:normal;
-		
-	}
-
 	.cardbutton{
 		align-self: normal;
 		justify-content: center;
+	}
+
+	.vision{
+		padding:15px 90px;
+	}
+
+	.vision .cardbutton{
+		align-self: flex-start;
+	}
+
+	#team .card{
+		display:grid;
+		margin:0px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:1fr;
+	}
+
+	#team{
+		grid-template-rows: repeat(2, 0.5fr);
+		margin: 0px 90px 20px;
+	}
+
+	#teamHeading{
+		margin-left:90px
+	}
+
+	#johnCard{
+		grid-row:1/2;
+	}
+
+	#bobCard{
+		grid-row:2/3;
+	}
+
+	#john{
+		grid-column: 1/2;
+		grid-row:1/2
+	}
+
+	#johnCon{
+		grid-column: 2/3;
+		grid-row:1/2
+	}
+
+	#bob{
+		grid-column:2/3;
+		grid-row:1/2
+	}
+
+	#bobCon{
+		grid-column:1/2;
+		grid-row:1/2;
+		justify-self:start;
+	} 
+
+	#conHeading{
+		margin:0px 90px 30px;
+	}
+
+	#contact{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		margin: 0px 90px 10px;
+	}
+
+	.form{
+		grid-column:1/2;
+		grid-row:1/2;
+		padding:0px;
+		margin-left:0px;
+		font-size:1rem;
+	}
+
+	.location{
+		grid-column: 2/3;
+		grid-row:1/2;
+		margin:0px;
+	}
+
+	.hours{
+		grid-column:1/3;
+		grid-row:2/3;
+		margin:0px
+	}
+
+	footer p{
+		margin-left:70px
 	}
 }
