@@ -355,7 +355,7 @@ footer p{
 
 @media screen and (min-width:760px) {
 	h1{
-		font-size:4rem;
+		font-size:4.5rem;
 	}
 
 	h2{
@@ -421,7 +421,7 @@ footer p{
 
 	.welcomecontainer{
 		margin:100px;
-		padding: 80px 10px 80px;
+		padding: 80px 10px 10px;
 	}
 
 	.aboutus{
